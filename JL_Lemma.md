@@ -31,7 +31,7 @@ Defne $v = \frac{1}{\sqrt{k}} R . u$. Thus $v \in \mathbb{R}^k$ and $v_i = \frac
 **Proof** 
 
 $$
-\begin{align*}
+\begin{aligned}
 E||v||_2^2  \ \ &=  \ \  E\bigg[\sum_{i=1}^k v_i^2\bigg] \\
 &= \ \ \sum_{i=1}^k E[v_i^2]\\
 \\ 
@@ -50,7 +50,7 @@ Var\bigg(\sum_{j = 1}^d R_{ij}.u_j\bigg) &= E\bigg[\bigg(\sum_{j = 1}^d R_{ij}.u
 &= \ \ \frac{1}{k} \sum_{i=1}^k||u||_2^2\\
 \\
 &= \ \ ||u||_2^2
-\end{align*}
+\end{aligned}
 $$
 
 Def. Let $X = \frac{\sqrt{k}}{||u||}v, \ x = \sum_{i=1}^k x_i^2 = ||X||_2^2 = \frac{k||v||_2^2}{||u||_2^2}$
@@ -63,7 +63,7 @@ $x_i \sim N(0, 1)$
 
 **Proof** 
 $$
-\begin{align*}
+\begin{aligned}
 &P [||v||_2^2 \geq (1 + \epsilon)||u||_2^2]\\
 &= P\bigg[\frac{||u||_2^2x}{k} \geq||u||_2^2 \bigg]\\
 &= P[x \geq (1 + \epsilon)k]\\
@@ -85,7 +85,7 @@ as \ log(1 + x) \lt x - x^2/2 + x^3/3\\
 
 &\leq e^{-(\epsilon^2/2-\epsilon^3/3)k/2}
 
-\end{align*}
+\end{aligned}
 $$
 
 Similarly, $P[||v||_2^2 \leq (1 - \epsilon)||u||_2^2] \leq e^{(-2\epsilon - \epsilon^2/2)k/2}$
